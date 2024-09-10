@@ -1,0 +1,51 @@
+<svg width="121" height="140" viewBox="0 0 121 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_41_3841" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="4" width="115" height="132">
+<path d="M2.24323e-05 10.4287L1.72244e-05 129.571C1.70222e-05 134.198 5.01577 137.084 9.01575 134.758L111.478 75.187C115.457 72.8736 115.457 67.1263 111.478 64.8129L9.01575 5.24169C5.01578 2.91613 2.26346e-05 5.80186 2.24323e-05 10.4287Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_41_3841)">
+<path d="M2.27362e-05 3.47623L1.69205e-05 136.524C1.68531e-05 138.066 1.67194 139.028 3.00526 138.253L117.426 71.729C118.752 70.9579 118.752 69.0421 117.426 68.271L3.00526 1.74723C1.67194 0.972039 2.28036e-05 1.93394 2.27362e-05 3.47623Z" fill="#006EFA"/>
+<g filter="url(#filter0_f_41_3841)">
+<circle class="circle" r="116" fill="url(#paint0_linear_41_3841)"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_41_3841" x="-140" y="-140" width="280" height="280" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="12" result="effect1_foregroundBlur_41_3841"/>
+</filter>
+<linearGradient id="paint0_linear_41_3841" x1="-75.6336" y1="99.7725" x2="84.3161" y2="-52.8725" gradientUnits="userSpaceOnUse">
+<stop stop-color="#006EFA"/>
+<stop offset="0.5" stop-color="#5BC686"/>
+<stop offset="1" stop-color="#FF3D23"/>
+</linearGradient>
+</defs>
+</svg>
+
+<style>
+body{
+  width: 100vw; height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle{
+   animation: movement 5s infinite;
+}
+
+@keyframes movement {
+  0% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }
+  33% {
+    transform: translate(120px, 70px) rotate(-90deg);
+  }
+  66% {
+    transform: translate(0px, 140px) rotate(90deg);
+  }
+  100% {
+    transform: translate(0px, 0px) rotate(0deg);
+  }  
+}
+</style>
