@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Red Dots on Click</title>
+  <style>
+    .dot {
+      width: 16px;
+      height: 16px;
+      background-color: #006efa99;
+      border-radius: 50%;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+<script>
+
+	let point = 0;
+  document.addEventListener('click', function (event) {
+  if(point == 0){
+    // Create a new div element for the dot
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    
+    // Set the position of the dot based on the click location
+    dot.style.left = `${event.pageX - 5}px`; // Adjust to center the dot
+    dot.style.top = `${event.pageY - 5}px`;  // Adjust to center the dot
+    
+    // Append the dot to the body
+    document.body.appendChild(dot);
+    point++;
+    }
+  });
+</script>
+
+</body>
+</html>
